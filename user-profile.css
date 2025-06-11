@@ -61,8 +61,8 @@ body {
     margin-top: 2vh;
     display: flex;
     width: 10vw;
-    height: 18vh;
-    /* height: auto; */
+    /* height: 18vh; */
+    height: auto;
     /* aspect-ratio: 1/1; */
 }
 
@@ -72,12 +72,12 @@ body {
 
 .title-location {
     margin: 0 auto 0 2.5vw;
-    width: 8vw;
+    width: 30%;
 }
 
 .date-time {
     margin: 0 auto 0 auto;
-    width: 8vw;
+    width: 30%;
 }
 
 .description {
