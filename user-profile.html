@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./user-profile.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito');
+    </style>
     <title>User Profile</title>
 </head>
 <body>
@@ -11,7 +15,7 @@
     <div class="container">
         <div class="left-column">
             <div id="user-info-card" class="card">
-                <img src="#" alt="Profile Photo">
+                <img src="./pictures/default.JPG" alt="Profile Photo" class="user-profile-img">
                 <h2>FirstName LastName</h2>
                 <div class="user-info">
                     <h3>Email Address:</h3>
@@ -32,7 +36,7 @@
                 <div class="user-settings">
                     <a href="#">Edit profile</a><br>
                     <a href="#">Change password</a><br>
-                    <a href="#">Delete account</a><br>
+                    <a href="#" style="color: red">Delete account</a><br>
                     <a href="#">Report error</a><br>
                     <a href="#">Log out</a><br>
                 </div>
@@ -42,44 +46,161 @@
             <div id="upcoming-attending-events">
                 <h2>Upcoming Attending Events</h2>
                 <div class="event-card card">
-                    <img src="#" alt="Event Card Image" class="event-card-img">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
                     <div class="event-card-info">
-                        <div class="title-location">
-                            <p><span class="bold-text">Event Title: </span>Event Name</p>
-                            <p><span class="bold-text">Location: </span>Barr Smith Library</p>
-                        </div>
-                        <div class="date-time">
-                            <p><span class="bold-text">Date: </span>01/01/2026</p>
-                            <p><span class="bold-text">Start Time: </span>16:00</p>
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
                         </div>
                         <div class="description">
                             <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                 </div>
-                <button>Show more events</button>
+                <div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="orange-button">Show more events</button>
             </div>
             <div id="past-attending-events">
-                
+                <h2>Past Attending Events</h2>
+                <div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="upcoming-hosting-events">
                 <h2>Upcoming Hosting Events</h2>
-                <div class="event-card">
-
+<div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="event-card">
-
+                <div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="past-hosting-events">
                 <h2>Past Hosting Events</h2>
-                <div class="event-card">
-
+<div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="event-card">
-
+                <div class="event-card card">
+                    <img src="./pictures/default.JPG" alt="Event Card Image" class="event-card-img">
+                    <div class="event-card-info">
+                        <div class="title-location-date-time">
+                            <div class="title-location">
+                                <p><span class="bold-text">Event Title: </span>Event Name</p>
+                                <p><span class="bold-text">Location: </span>Barr Smith Library</p>
+                            </div>
+                            <div class="date-time">
+                                <p><span class="bold-text">Date: </span>01/01/2026</p>
+                                <p><span class="bold-text">Start Time: </span>16:00</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p><span class="bold-text">Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>        </div>
+            </div>
+        </div>
     </div>
 
 

@@ -1,11 +1,10 @@
 body {
-    background-color: #f5f5f5;
-    /* font-size: 32px; */
+  /* padding: 50px; */
+  background-color: #f5f5f5;
+  font: 18px "Nunito", Helvetica, Arial, sans-serif;
+  display: flex;
+  line-height: 2vh;
 }
-
-/* h2 {
-    font-size: 24px;
-} */
 
 .bold-text {
     font-weight: bold;
@@ -14,4 +13,62 @@ body {
 .card {
     background-color: #fff;
     border: #d9d9d9 solid 1px;
+    padding: 2.5vh 2vw;
+    border-radius: 5px;
+}
+
+.container {
+    margin: 10vh auto 10vh auto;
+    width: 80vw;
+    display: flex;
+    word-wrap: break-word;
+}
+
+.left-column {
+    margin: 5vh 1vw 5vh 0vw;
+    width: 20vw;
+}
+
+.right-column {
+    margin: 0vh 0vw 5vh 1vw;
+    width: 77vw;
+}
+
+.user-profile-img {
+    width: 5vw;
+    height: auto;
+}
+
+.event-card {
+    display: flex;
+    height: auto;
+}
+
+.event-card-img {
+    margin-top: 2vh;
+    display: flex;
+    width: 10vw;
+    height: 18vh;
+    /* height: auto; */
+    /* aspect-ratio: 1/1; */
+}
+
+.title-location-date-time {
+    display: flex;
+}
+
+.title-location {
+    margin: 0 auto 0 2.5vw;
+    width: 8vw;
+}
+
+.date-time {
+    margin: 0 auto 0 auto;
+    width: 8vw;
+}
+
+.description {
+    margin: .5vh auto 0 2.4vw;
+    /* margin: 5vh 5vw 0 5vw; */
+    width: 48vw;
 }
