@@ -1,9 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   /* padding: 50px; */
   background-color: #f5f5f5;
   font: 18px "Nunito", Helvetica, Arial, sans-serif;
   display: flex;
-  line-height: 2vh;
 }
 
 .bold-text {
@@ -20,7 +23,7 @@ body {
 }
 
 .container {
-    margin: 10vh auto 10vh auto;
+    margin: 20vh auto 10vh auto;
     width: 80vw;
     display: flex;
     word-wrap: break-word;
@@ -32,6 +35,7 @@ body {
 }
 
 .right-column {
+    padding-top: 0;
     margin: 0vh 0vw 5vh 1vw;
     width: 77vw;
 }
@@ -49,41 +53,51 @@ body {
     margin: 2.7vh auto 2vh auto;
     border-radius: 50%;
     width: 10vw;
-    height: auto;
 }
 
 .event-card {
     display: flex;
-    height: auto;
+    height: 30vh;
+    justify-content: space-between;
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 .event-card-img {
     margin-top: 2vh;
     display: flex;
     width: 10vw;
-    /* height: 18vh; */
-    height: auto;
+    height: 20vh;
     /* aspect-ratio: 1/1; */
+}
+
+.event-card-info {
+    margin-top: 1.6vh;
 }
 
 .title-location-date-time {
     display: flex;
+    margin-bottom: 0;
+    /* padding: 0; */
 }
 
 .title-location {
     margin: 0 auto 0 2.5vw;
-    width: 30%;
+    width: 40%;
+    padding: 0;
 }
 
 .date-time {
     margin: 0 auto 0 auto;
-    width: 30%;
+    width: 40%;
+    padding: 0;
 }
 
 .description {
-    margin: .5vh auto 0 2.4vw;
+    margin: 3vh auto 3vh 2.4vw;
     /* margin: 5vh 5vw 0 5vw; */
-    width: 48vw;
+    width: 48vw; height: 8vh;
+    overflow: hidden;
 }
 
 .white-button {
@@ -97,5 +111,5 @@ body {
     background-color: #fff;
     margin-left: 22.5vw;
     margin-right: 20vw;
-    margin-bottom: 8vh;
+    overflow: hidden;
 }
