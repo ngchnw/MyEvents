@@ -2,11 +2,22 @@
     box-sizing: border-box;
 }
 
-body {
-  /* padding: 50px; */
+/* DONT DELETE THESE! THESE ARE FOR TESTING MODALS */
+#overlay {
+    display: none;
+}
+
+/* body {
   background-color: #f5f5f5;
   font: 18px "Nunito", Helvetica, Arial, sans-serif;
   display: flex;
+} */
+
+#overlay {
+    background-color: #f5f5f5;
+    font: 18px "Nunito", Helvetica, Arial, sans-serif;
+    display: flex;
+    width: 100vw;
 }
 
 .bold-text {
@@ -23,7 +34,7 @@ body {
 }
 
 .container {
-    margin: 20vh auto 10vh auto;
+    margin: 10vh auto 10vh auto;
     width: 80vw;
     display: flex;
     word-wrap: break-word;
@@ -57,17 +68,17 @@ body {
 
 .event-card {
     display: flex;
-    height: 30vh;
+    height: 20vh;
     justify-content: space-between;
     overflow: hidden;
     vertical-align: middle;
 }
 
 .event-card-img {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex;
-    width: 10vw;
-    height: 20vh;
+    width: 7.5vw;
+    height: 13vh;
     /* aspect-ratio: 1/1; */
 }
 
