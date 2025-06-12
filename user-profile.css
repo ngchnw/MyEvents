@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* DONT DELETE THESE! THESE ARE FOR TESTING MODALS */
@@ -80,7 +81,6 @@
     display: flex;
     width: 7.5vw;
     height: 13vh;
-    /* aspect-ratio: 1/1; */
 }
 
 .event-card-info {
