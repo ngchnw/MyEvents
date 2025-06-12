@@ -85,3 +85,17 @@ select {
   margin-right: 2vw;
   overflow: hidden;
 }
+
+textarea {
+  border-radius: 10px;
+  font: 18px "Nunito", Helvetica, Arial, sans-serif;
+  width: 40vw;
+  height: 40vh;
+  padding-left: .5vw;
+}
+
+#delete_account_button {
+  color: white;
+  background-color: red;
+  border: none;
+}

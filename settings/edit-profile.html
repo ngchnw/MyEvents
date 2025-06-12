@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/user-profile-modal.css">
+    <link rel="stylesheet" href="/user-profile.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito');
     </style>
-    <title>Modals</title>
+    <title>Edit your profile</title>
 </head>
 <body>
-    <div class="modal" id="edit-profile-modal">
+    <div class="modal" id="edit_profile_modal">
         <div class="modal-content">
             <h1>Edit your profile</h1>
             <form id="edit-profile-form">
@@ -67,7 +68,14 @@
                     </div>
                 </div>
                 <!-- <br> -->
+            <!-- <button type="submit" class="button orange-button"">Save changes</button> -->
             </form>
+            <br>
+            <div class="modal-buttons">
+                <button id="discard_changes_button" class="white-button modal-button">Discard changes</button>
+                <br>
+                <button type="submit" form="edit-profile-form" class="modal-button button orange-button"">Save changes</button>
+            </div>
         </div>
     </div>
 </body>
