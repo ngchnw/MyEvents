@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="./user-profile.css">
     <link rel="stylesheet" href="./user-profile-modal.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="/user-profile.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito');
     </style>
+
     <title>User Profile</title>
 </head>
 <body>
@@ -57,11 +59,11 @@
                 <div id="user-settings-card" class="card">
                     <h2>Settings</h2>
                     <div class="user-settings">
-                        <a href="#">Edit profile</a><br>
-                        <a href="#">Change password</a><br>
-                        <a href="#" style="color: red">Delete account</a><br>
-                        <a href="#">Report error</a><br>
-                        <a href="#">Log out</a><br>
+                        <button id="edit_profile_button" class="user-settings-button">Edit profile</button><br>
+                        <button id="change_password_button" class="user-settings-button">Change password</button><br>
+                        <button id="delete_account_button" class="user-settings-button" style="color: red">Delete account</button><br>
+                        <button id="report_error_button" class="user-settings-button">Report error</button><br>
+                        <button id="log_out_button" class="user-settings-button">Log out</button><br>
                     </div>
                 </div>
             </div>
@@ -112,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="white-button">Show more events</button>
+                    <button type="button" class="show-more-button white-button">Show more events</button>
                 </div>
                 <div id="attended-events">
                     <h2>Attended Events</h2>
@@ -138,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="white-button">Show more events</button>
+                    <button type="button" class="show-more-button white-button">Show more events</button>
                 </div>
                 <div id="hosting-events">
                     <h2>Hosting Events</h2>
@@ -186,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="white-button">Show more events</button>
+                    <button type="button" class="show-more-button white-button">Show more events</button>
                 </div>
                 <div id="hosted-events">
                     <h2>Hosted Events</h2>
@@ -234,13 +236,13 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="white-button">Show more events</button>
+                    <button type="button" class="show-more-button white-button">Show more events</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- modals to be hidden by default -->
-    <div class="modal" id="edit-profile-modal">
+    <div class="modal" id="edit_profile_modal">
         <div class="modal-content">
             <h1>Edit your profile</h1>
             <form id="edit-profile-form">
@@ -297,8 +299,14 @@
                     </div>
                 </div>
                 <!-- <br> -->
-            <button type="submit" class="button orange-button"">Save changes</button>
+            <!-- <button type="submit" class="button orange-button"">Save changes</button> -->
             </form>
+            <br>
+            <div class="modal-buttons">
+                <button class="white-button modal-button">Discard changes</button>
+                <br>
+                <button type="submit" form="edit-profile-form" class="modal-button button orange-button"">Save changes</button>
+            </div>
         </div>
     </div>
 </body>
